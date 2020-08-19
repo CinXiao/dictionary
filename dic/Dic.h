@@ -31,7 +31,8 @@ public:
 	void new_word();//新建单词
 	void show_numbe();//显示一个区间的单词
 	void del_word();
-
+	void swich_word();//交换两个单词
+	void sort();
 	/*核心模块*/
 	void read_data();
 	void save();//保存数据

@@ -70,6 +70,10 @@ void Dic::show_all()
 		cout<<dat[i].word_id <<"\t"<< dat[i].word <<"\t\t\t"<< dat[i].explain <<"\t\n";
 		
 	}
+
+	setcolor(0x79);
+	cout << "单词ID\t单词名称\t\t单词解释\t\n";
+	cout << "单词本名称:" << name << "\t单词个数:" << max_word << endl;
 	setcolor(0x07);
 }
 
@@ -171,6 +175,10 @@ void Dic::show_numbe()
 			cout << dat[i].word_id << "\t" << dat[i].word << "\t\t\t\t" << dat[i].explain << "\t\n";
 
 	}
+
+		setcolor(0x79);
+		cout << "单词ID\t单词名称\t\t单词解释\t\n";
+		cout << "单词本名称:" << name << "\t单词个数:" << max_word << endl;
 		setcolor(0x07);
 }
 
@@ -188,6 +196,60 @@ void Dic::del_word()
 		dat[i].word_id = i;
 	}
 	max_word--;
+	save();
+}
+
+void Dic::swich_word()
+{
+
+	int x, y;
+	cin >> x>>y;
+	if (x < 0 || y < 0 || x >= max_word || y >= max_word)return;
+	else
+	{
+		Dat temp;
+		temp.word = dat[x].word;
+		temp.explain = dat[x].explain;
+		dat[x].word = dat[y].word;
+		dat[x].explain = dat[y].explain;
+		dat[y].word = temp.word;
+		dat[y].explain = temp.explain;
+	}
+	save();
+	return;
+}
+
+void Dic::sort()
+{
+
+
+	for (int i=0;i<max_word;++i)
+	{
+
+		for (int j=i;j<max_word;++j)
+		{
+			Dat temp;
+			if (dat[i].word.length()>dat[j].word.length())
+			{
+				temp.word = dat[i].word;
+				temp.explain = dat[i].explain;
+
+				dat[i].word = dat[j].word;
+				dat[i].explain = dat[j].explain;
+
+				dat[j].word = temp.word;
+				dat[j].explain = temp.explain;
+
+
+			}
+
+
+
+		}
+
+	}
+
+
 	save();
 }
 
