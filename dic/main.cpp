@@ -29,6 +29,7 @@ int main()
 			}
 			
 		}
+		if (cas == "find")dic.find_word();
 		if (cas == "add")dic.new_word();//添加单词
 		if (cas == "show-all")dic.show_all();//显示全部单词
 		if (cas == "show-number")dic.show_numbe();//显示一个区间的单词

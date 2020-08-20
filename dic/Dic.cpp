@@ -77,6 +77,30 @@ void Dic::show_all()
 	setcolor(0x07);
 }
 
+void Dic::find_word()
+{
+	string word;
+	cin >> word;
+	for (int i=0;i<max_word;++i)
+	{
+		if (word == dat[i].word)
+		{
+			cout << "单词ID\t单词名称\t\t单词解释\t\n";
+			setcolor(0x79);
+			cout <<dat[i].word_id<<"\t"<< word<<"\t"<<dat[i].explain;
+			setcolor(0x07);
+		}
+	}
+
+
+
+
+
+
+
+
+}
+
 
 
 void Dic::save()
@@ -97,8 +121,11 @@ void Dic::save()
 
 void Dic::ins_word()
 {
-	int temp;
-		cin >> temp;
+
+
+	string s;
+	cin >> s;
+	int temp=atoi(s.c_str());
 		if (temp>=0&&temp<max_word)
 		{
 			string word,explain;
@@ -106,6 +133,9 @@ void Dic::ins_word()
 			cin >> word>>explain;
 			if (word == "*"||explain=="*")
 			{
+
+
+
 				if (explain == "*")
 				{
 					dat[temp].word = word;
@@ -184,11 +214,10 @@ void Dic::show_numbe()
 
 void Dic::del_word()
 {
-
-	int id;
-	cin >> id;
+	string s;
+	cin >> s;
+	int id = atoi(s.c_str());
 	if (id > max_word - 1 || id < 0)return;
-
 	for (int i=id;i<max_word-1;++i)
 	{
 		dat[i].word = dat[i + 1].word;
