@@ -25,21 +25,25 @@ void dat::new_dat()
 
 
 
-void dat::debugdata()
-{
-
-    for(int i=0;i<word_value;++i)
-    {
-     qDebug()<<w[i].w<<"\n";
-
-    }
-}
 
 
 
 void  dat::addword(QString ws,QString es,QString ns)
 {
    word *temp=new word[word_value];
+
+for(int i=0;i<word_value;++i)
+{
+  if(w[i].w==ws)
+  {
+    w[i].explain=es;
+    w[i].note=ns;
+    return;
+  }
+}
+
+
+
 
     for(int i=0;i<word_value;++i)
     {
@@ -65,7 +69,7 @@ void  dat::addword(QString ws,QString es,QString ns)
     w[word_value-1].explain=es;
     w[word_value-1].note=ns;
     w[word_value-1].proficient_value=0;//熟练度默认为0
-qDebug()<<w[word_value-1].w;
+
 
 
 }

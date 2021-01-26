@@ -28,7 +28,7 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
 set(TS_FILES Dictionary_zh_CN.ts)
-
+set(CMAKE_CXX_FLAGS "-mwindows")
 set(PROJECT_SOURCES
 
         main.cpp
@@ -39,7 +39,10 @@ set(PROJECT_SOURCES
         widget.ui
         word.cpp
         word.h
-        img.qrc
+        ui.qrc
+        set.cpp
+        testwindow.cpp
+        testwindow.h
 
         ${TS_FILES}
 )

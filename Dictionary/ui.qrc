@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ui/add1.png</file>
+        <file>ui/add2.png</file>
+        <file>ui/find.png</file>
+        <file>ui/more.png</file>
+        <file>ui/my.png</file>
+        <file>ui/set.png</file>
+        <file>ui/edit.png</file>
+        <file>ui/data.png</file>
+        <file>ui/about.png</file>
+        <file>ui/en.png</file>
+        <file>ui/work.png</file>
+        <file>ui/blue_edit.png</file>
+        <file>ui/blue_en.png</file>
+        <file>ui/blue_find.png</file>
+        <file>ui/blue_me.png</file>
+        <file>ui/blue_more.png</file>
+        <file>ui/blue_set.png</file>
+        <file>ui/blue_test.png</file>
+        <file>ui/blue_add.png</file>
+        <file>ui/blue_color.png</file>
+        <file>ui/blue_about.png</file>
+        <file>ui/style001.png</file>
+        <file>ui/me.png</file>
+        <file>ui/004.png</file>
+        <file>ui/002.png</file>
+        <file>ui/003.png</file>
+    </qresource>
+</RCC>

@@ -9,33 +9,63 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="widget.ui" line="154"/>
+        <location filename="widget.ui" line="157"/>
         <source>解释</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="widget.ui" line="175"/>
+        <location filename="widget.ui" line="178"/>
         <source>笔记</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="widget.ui" line="188"/>
-        <source>编辑</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="widget.ui" line="218"/>
-        <source>X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="widget.ui" line="211"/>
-        <source>🔅</source>
+        <source>查找</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="widget.ui" line="204"/>
-        <source>🧙‍</source>
+        <location filename="widget.ui" line="541"/>
+        <source>测试</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="586"/>
+        <source>昵称：测试用户</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="340"/>
+        <source>强力搜索</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="417"/>
+        <source>CET4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="434"/>
+        <source>CET6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="311"/>
+        <source>v:0.1.9.2 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="370"/>
+        <source>默认紫</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="387"/>
+        <source>加强蓝</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widget.ui" line="468"/>
+        <source>F:2019.12.14 N: 2021.01.30  A:2020®XYY</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
